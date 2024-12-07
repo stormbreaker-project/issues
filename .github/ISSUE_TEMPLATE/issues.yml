@@ -1,0 +1,47 @@
+body:
+- attributes:
+    description: 'Anything that can help us identify the build you are using
+
+      Example: ```Stormbreaker-billie-4.19-20241127.zip```
+
+      '
+    label: Build Date
+  type: input
+  validations:
+    required: true
+- attributes:
+    label: Device
+    multiple: false
+    options:
+    - Select one
+    - Billie
+    - X00P
+    - X01AD
+    - Ginkgo
+  type: dropdown
+  validations:
+    required: true
+- attributes:
+    description: A clear and concise description of what the bug is.
+    label: Describe the Bug
+  type: textarea
+  validations:
+    required: true
+- attributes:
+    description: Steps to reproduce the behavior, please provide a clear description
+      of how to reproduce the issue, based on the linked minimal reproduction. Screenshots
+      can be provided in the issue body below. If using code blocks, make sure that
+      [syntax highlighting is correct](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting)
+      and double check that the rendered preview is not broken.
+    label: Steps to Reproduce
+  type: textarea
+  validations:
+    required: true
+- attributes:
+    description: A concise description of what you expected to happen.
+    label: Expected Behavior
+  type: textarea
+  validations:
+    required: true
+description: Create a bug report
+name: Bug Report
